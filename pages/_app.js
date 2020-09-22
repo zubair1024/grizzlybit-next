@@ -57,7 +57,6 @@ const GlobalStyle = ({ children }) => {
 const App = ({ Component, pageProps }) => {
   useEffect(() => {
     if (process.env.NODE_ENV === 'production') {
-      console.log(`Route changed!`);
       const handleRouteChange = (url) => GTMPageView(url);
       Router.events.on('routeChangeComplete', handleRouteChange);
       return () => {

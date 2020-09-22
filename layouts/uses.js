@@ -47,12 +47,11 @@ export default function UsesLayout({ children }) {
           w="100%"
         >
           <Heading letterSpacing="tight" mb={2} as="h1" size="2xl">
-            My Gear
+            My Setup
           </Heading>
           <Flex mt={2} w="100%">
             <Text fontSize="sm" color={textColor[colorMode]}>
-              Here's what tech I'm currently using for coding, videos, and
-              music.
+              Here is a list of things I use on a daily basis...
             </Text>
           </Flex>
         </Flex>
