@@ -13,7 +13,7 @@ const SEO = {
     description,
     images: [
       {
-        url: 'https://grizzlybit.info/static/images/og.jpg',
+        url: 'https://grizzlybit.info/static/images/gb.jpg',
         alt: title,
         width: 1280,
         height: 720
