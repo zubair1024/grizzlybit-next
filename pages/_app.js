@@ -56,13 +56,14 @@ const GlobalStyle = ({ children }) => {
 
 const App = ({ Component, pageProps }) => {
   useEffect(() => {
-    // if (process.env.NODE_ENV === 'production') {
-    const handleRouteChange = (url) => GTMPageView(url);
-    Router.events.on('routeChangeComplete', handleRouteChange);
-    return () => {
-      Router.events.off('routeChangeComplete', handleRouteChange);
-    };
-    // }
+    if (process.env.NODE_ENV === 'production') {
+      console.log(`Route changed!`);
+      const handleRouteChange = (url) => GTMPageView(url);
+      Router.events.on('routeChangeComplete', handleRouteChange);
+      return () => {
+        Router.events.off('routeChangeComplete', handleRouteChange);
+      };
+    }
   }, []);
 
   return (
@@ -82,8 +83,8 @@ const App = ({ Component, pageProps }) => {
                 content="/static/favicons/browserconfig.xml"
                 name="msapplication-config"
               />
-              {/* <meta content="" name="yandex-verification" />
-              <meta
+              <meta content="1aa84afb4b6d6794" name="yandex-verification" />
+              {/* <meta
                 content=""
                 name="google-site-verification"
               /> */}
