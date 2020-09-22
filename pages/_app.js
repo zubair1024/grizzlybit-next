@@ -15,6 +15,7 @@ import theme from '../styles/theme';
 import { prismLightTheme, prismDarkTheme } from '../styles/prism';
 import MDXComponents from '../components/MDXComponents';
 import SEO from '../next-seo.config';
+import { GTMPageView } from '../utils/gtm';
 
 const GlobalStyle = ({ children }) => {
   const { colorMode } = useColorMode();
@@ -49,15 +50,19 @@ const GlobalStyle = ({ children }) => {
   );
 };
 
-Router.events.on('routeChangeComplete', () => {
-  // do nothing
-});
+// Router.events.on('routeChangeComplete', () => {
+//   // do nothing
+// });
 
 const App = ({ Component, pageProps }) => {
   useEffect(() => {
-    if (process.env.NODE_ENV === 'production') {
-      // do nothing
-    }
+    // if (process.env.NODE_ENV === 'production') {
+    const handleRouteChange = (url) => GTMPageView(url);
+    Router.events.on('routeChangeComplete', handleRouteChange);
+    return () => {
+      Router.events.off('routeChangeComplete', handleRouteChange);
+    };
+    // }
   }, []);
 
   return (
