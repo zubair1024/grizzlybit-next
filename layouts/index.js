@@ -1,4 +1,5 @@
 import React from 'react';
+import NextLink from 'next/link';
 import { parseISO, format } from 'date-fns';
 import {
   useColorMode,
@@ -7,8 +8,8 @@ import {
   Flex,
   Stack,
   Avatar,
-  Link,
-  Box
+  Box,
+  Divider
 } from '@chakra-ui/core';
 import { DiscussionEmbed } from 'disqus-react';
 
@@ -85,6 +86,18 @@ export default function BlogLayout({ children, frontMatter }) {
               title: frontMatter.title
             }}
           />
+        </Box>
+        <Box w="100%" d="flex" alignItems="center" justifyContent="center">
+          <NextLink href="https://www.buymeacoffee.com/zubair1024">
+            <img
+              src="https://cdn.buymeacoffee.com/buttons/v2/default-orange.png"
+              alt="Buy Me A Coffee"
+              style={{
+                height: '45px',
+                width: '160px'
+              }}
+            />
+          </NextLink>
         </Box>
       </Stack>
     </Container>
