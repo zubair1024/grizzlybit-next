@@ -69,6 +69,17 @@ const Footer = () => (
           /newsletter
         </Link>
       </NextLink>
+      <NextLink href="/figma" passHref>
+        <Link
+          fontSize="sm"
+          color="gray.500"
+          minWidth="100px"
+          mr={2}
+          title="Figma"
+        >
+          /figma
+        </Link>
+      </NextLink>
     </div>
   </Flex>
 );

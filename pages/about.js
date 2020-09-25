@@ -76,13 +76,14 @@ const About = () => {
             <Text color={secondaryTextColor[colorMode]} mb={4}>
               I love designing when I'm not coding. I love desiging and
               developing beautiful and intuitive systems. A true juggler between
-              VS Code and Figma.
+              VS Code and Figma. You can view some of my Figma designs{' '}
+              <CustomLink href="/figma">here</CustomLink>.
             </Text>
             <Text color={secondaryTextColor[colorMode]} mb={4}>
               If you're interested in my development ideas, tech career and my
               personal life (I don't know why you would do that), You can view
-              my newsletters on&nbsp;
-              <CustomLink href="/newsletter">my newsletter.</CustomLink>
+              my newsletters&nbsp;
+              <CustomLink href="/newsletter">here</CustomLink>.
             </Text>
           </Flex>
           <Timeline />
