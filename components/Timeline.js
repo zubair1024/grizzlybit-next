@@ -149,6 +149,15 @@ const FullTimeline = () => (
     </List>
     <YearDivider />
     <Heading as="h3" size="lg" fontWeight="bold" mb={4} letterSpacing="tighter">
+      2008
+    </Heading>
+    <List>
+      <TimelineStep title="Got a dog 🐕">
+        Got a new addition to the family. An adorable German Shepard named Zack ♥️.
+      </TimelineStep>
+    </List>
+    <YearDivider />
+    <Heading as="h3" size="lg" fontWeight="bold" mb={4} letterSpacing="tighter">
       1991
     </Heading>
     <List>
@@ -191,6 +200,7 @@ const Timeline = () => {
           <Link href="https://medium.com/swlh">
             <a>The Startup</a>
           </Link>
+          . One of my favorite bookmarked publications out there.
         </TimelineStep>
       </List>
       <YearDivider />
@@ -232,8 +242,12 @@ const Timeline = () => {
           Created our first B2C mobile application for consumer tracking with
           over 10k active users.
         </TimelineStep>
+        <TimelineStep title="RAZRLAB opened a branch office in Bangalore">
+          Opened our very own RAZRLAB branch office in India. Getting geared up
+          with an awesome set of new team members.
+        </TimelineStep>
         <TimelineStep title="Moved to an Office">
-          Moved ourself from a garage to an office in a prime area.
+          Moved ourself from a garage to an office in a prime area in Dubai.
         </TimelineStep>
       </List>
       {isShowingFullTimeline ? (
