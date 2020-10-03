@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Link from 'next/link';
 import {
   useColorMode,
   Heading,
@@ -171,6 +172,28 @@ const Timeline = () => {
         My Time on Earth... 🌍
       </Heading>
 
+      <Heading
+        as="h3"
+        size="lg"
+        fontWeight="bold"
+        mb={4}
+        letterSpacing="tighter"
+      >
+        2020
+      </Heading>
+      <List>
+        <TimelineStep title="Writer for 'Weekly Webtips' and 'The Startup' Publications">
+          Became a writer for{' '}
+          <Link href="https://medium.com/weekly-webtips">
+            <a>Weekly Webtips</a>
+          </Link>{' '}
+          and{' '}
+          <Link href="https://medium.com/swlh">
+            <a>The Startup</a>
+          </Link>
+        </TimelineStep>
+      </List>
+      <YearDivider />
       <Heading
         as="h3"
         size="lg"
