@@ -1,6 +1,7 @@
 import React from 'react';
 import NextLink from 'next/link';
 import { Flex, Link, IconButton } from '@chakra-ui/core';
+import { FaMedium } from 'react-icons/fa';
 
 const Footer = () => (
   <Flex align="center" mb={4} direction="column">
@@ -31,6 +32,15 @@ const Footer = () => (
         <IconButton
           aria-label="LinkedIn"
           icon="linkedin"
+          size="lg"
+          color="gray.500"
+          variant="ghost"
+        />
+      </Link>
+      <Link href="https://medium.com/@zubair1024" title="Medium" isExternal>
+        <IconButton
+          aria-label="medium"
+          icon={FaMedium}
           size="lg"
           color="gray.500"
           variant="ghost"
