@@ -129,9 +129,9 @@ const Index = () => {
             {filteredBlogPosts.map((frontMatter) => (
               <BlogPost key={frontMatter.title} {...frontMatter} />
             ))}
+            <AdBanner />
           </Flex>
         </Stack>
-        <AdBanner />
       </Container>
     </>
   );
