@@ -13,7 +13,8 @@ const AdBanner = () => {
     <ins
       className="adsbygoogle adbanner-customize"
       style={{
-        display: 'block'
+        display: 'block',
+        textAlign: 'center'
       }}
       data-ad-layout="in-article"
       data-ad-format="fluid"
