@@ -16,7 +16,7 @@ const AdBanner = () => {
       style={{
         display: 'block',
         textAlign: 'center',
-        width: '250px'
+        minWidth: '250px'
       }}
       data-adtest="on"
       data-ad-layout="in-article"
