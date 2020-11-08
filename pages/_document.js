@@ -56,6 +56,11 @@ class MyDocument extends Document {
             }}
           />
           {/* End Google Tag Manager (noscript) */}
+          <script
+            data-ad-client="ca-pub-5766744601171066"
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+          ></script>
         </Head>
         <body>
           <Main />

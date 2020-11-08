@@ -15,6 +15,7 @@ import {
 
 import Container from '../components/Container';
 import BlogPost from '../components/BlogPost';
+import AdBanner from '../components/AdBanner';
 
 // eslint-disable-next-line import/no-unresolved, import/extensions
 import { frontMatter as blogPosts } from './blog/**/*.mdx';
@@ -130,6 +131,7 @@ const Index = () => {
             ))}
           </Flex>
         </Stack>
+        <AdBanner />
       </Container>
     </>
   );
