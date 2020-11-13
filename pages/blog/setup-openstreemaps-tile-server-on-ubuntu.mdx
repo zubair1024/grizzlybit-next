@@ -60,7 +60,7 @@ Ufff.... 😅, I think we are done with installing packages. Now let's move on t
 
 # Setup
 
-Firstly, we will begin with switching over to our postgres user
+Firstly, we will begin by switching over to our postgres user
 
 ```bash
 sudo -u postgres -i
@@ -72,7 +72,7 @@ Now, let's create a new database user
 createuser osm
 ```
 
-Next, we will crate a new database named gis with the owner as the new user we have just created
+Next, we will create a new database named gis with the owner as the new user we have just created
 
 ```bash
 createdb -E UTF8 -O osm gis
@@ -134,7 +134,7 @@ Now we use the `osm` user and go into the directory where we had cloned the `ope
 scripts/get-shapefiles.py
 ```
 
-Shapefiles is a format in which we can store GeoJSON data.
+Shapefiles are a format in which we can store GeoJSON data.
 
 Now, we will use carto global dependency that was installed to convert `project.mml` file to a style file for mapnik to use
 
