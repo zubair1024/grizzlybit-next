@@ -153,7 +153,8 @@ const FullTimeline = () => (
     </Heading>
     <List>
       <TimelineStep title="Got a dog 🐕">
-        Got a new addition to the family. An adorable German Shepard named Zack ♥️.
+        Got a new addition to the family. An adorable German Shepard named Zack
+        ♥️.
       </TimelineStep>
     </List>
     <YearDivider />
@@ -178,7 +179,7 @@ const Timeline = () => {
       mt={8}
     >
       <Heading letterSpacing="tight" mb={4} size="xl" fontWeight="bold">
-        My Time on Earth... 🌍
+        My Time on Earth 🌍
       </Heading>
 
       <Heading

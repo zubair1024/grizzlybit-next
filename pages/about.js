@@ -15,6 +15,7 @@ import formatDistance from 'date-fns/formatDistance';
 import Container from '../components/Container';
 import { CustomLink } from '../components/MDXComponents';
 import Timeline from '../components/Timeline';
+import NowReading from '../components/NowReading';
 
 const url = 'https://grizzlybit.info/about';
 const title = 'About Me – Zubair Ahmed';
@@ -85,6 +86,9 @@ const About = () => {
               <CustomLink href="/newsletter">here</CustomLink>.
             </Text>
           </Flex>
+          <Box>
+            <NowReading></NowReading>
+          </Box>
           <Timeline />
         </Stack>
       </Container>
