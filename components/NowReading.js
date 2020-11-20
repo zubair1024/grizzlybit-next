@@ -29,7 +29,6 @@ export default function NowReading() {
         xml2json.parseString(response.data, function (err, result) {
           data = result;
         });
-        console.log(data);
         setCurrentlyReading(data);
       })
       .catch((error) => {

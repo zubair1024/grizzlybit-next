@@ -10,7 +10,8 @@ import {
   InputGroup,
   InputRightElement,
   Icon,
-  Image
+  Image,
+  Spinner
 } from '@chakra-ui/core';
 
 import Container from '../components/Container';
@@ -29,6 +30,7 @@ const description =
   "A coder's digest that is trying to be quirky, flawed and an enormous success.";
 
 const Index = () => {
+  const [logoLoading, setLogoLoading] = useState(1);
   const [searchValue, setSearchValue] = useState('');
   const { colorMode } = useColorMode();
   const secondaryTextColor = {
@@ -74,6 +76,7 @@ const Index = () => {
           >
             <Heading letterSpacing="tight" mb={2} as="h1" size="2xl">
               <Flex align="center" justify="center">
+                {logoLoading && <Spinner />}
                 <Image
                   width={{ base: 250 }}
                   src={
@@ -82,6 +85,7 @@ const Index = () => {
                       : '/static/images/grizzlybit-dark.png'
                   }
                   alt="Grizzlybit"
+                  onLoad={() => setLogoLoading()}
                 />
               </Flex>
             </Heading>

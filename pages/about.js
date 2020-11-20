@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NextSeo } from 'next-seo';
 import {
   useColorMode,
@@ -7,7 +7,8 @@ import {
   Flex,
   Stack,
   Box,
-  Image
+  Image,
+  Spinner
 } from '@chakra-ui/core';
 
 import formatDistance from 'date-fns/formatDistance';
@@ -21,6 +22,7 @@ const url = 'https://grizzlybit.info/about';
 const title = 'About Me – Zubair Ahmed';
 
 const About = () => {
+  const [profileImageLoading, setProfileImageLoading] = useState(1);
   const { colorMode } = useColorMode();
   const secondaryTextColor = {
     light: 'gray.700',
@@ -48,11 +50,13 @@ const About = () => {
         >
           <Box p={4} display={{ md: 'flex' }}>
             <Flex align="center" justify="center">
+              {profileImageLoading && <Spinner />}
               <Image
                 rounded="full"
                 width={{ xs: 200, md: 200, lg: 200 }}
                 src="/static/images/zubair-ahmed-square.jpg"
                 alt="Zubair Ahmed"
+                onLoad={() => setProfileImageLoading()}
               />
             </Flex>
             <Box mt={{ base: 4, md: 0 }} ml={{ md: 6 }}>
