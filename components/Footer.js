@@ -37,7 +37,7 @@ const Footer = () => (
           variant="ghost"
         />
       </Link>
-      <Link href="https://medium.com/@zubair1024" title="Medium" isExternal>
+      <Link href="https://grizzlybit.medium.com/" title="Medium" isExternal>
         <IconButton
           aria-label="medium"
           icon={FaMedium}
