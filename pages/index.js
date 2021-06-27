@@ -24,7 +24,13 @@ import { frontMatter as addressingBusinessWithIoT } from './blog/addressing-busi
 import { frontMatter as truthAboutBeingAFullStackDeveloper } from './blog/truth-about-being-a-full-stack-developer.mdx';
 import { frontMatter as importanceOfTeachingChildrenToCode } from './blog/importance-of-teaching-children-to-code.mdx';
 
-const url = 'https://grizzlybit.info/';
+console.log(blogPosts);
+console.log(blogPosts);
+console.log(blogPosts);
+console.log(blogPosts);
+console.log(blogPosts);
+
+const url = 'https://grizzlybit.dev/';
 const title = 'Grizzlybit';
 const description =
   "A coder's digest that is trying to be quirky, flawed and an enormous success.";

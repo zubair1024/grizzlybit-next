@@ -18,7 +18,7 @@ import { CustomLink } from '../components/MDXComponents';
 import Timeline from '../components/Timeline';
 import NowReading from '../components/NowReading';
 
-const url = 'https://grizzlybit.info/about';
+const url = 'https://grizzlybit.dev/about';
 const title = 'About Me – Zubair Ahmed';
 
 const About = () => {

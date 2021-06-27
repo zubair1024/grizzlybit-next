@@ -8,8 +8,7 @@ import {
   Flex,
   Stack,
   Avatar,
-  Box,
-  Divider
+  Box
 } from '@chakra-ui/core';
 import { DiscussionEmbed } from 'disqus-react';
 
@@ -26,11 +25,9 @@ export default function BlogLayout({ children, frontMatter }) {
     dark: 'gray.400'
   };
 
-  console.log(frontMatter);
-
   return (
     <Container>
-      <BlogSeo url={`https://grizzlybit.info/blog/${slug}`} {...frontMatter} />
+      <BlogSeo url={`https://grizzlybit.dev/blog/${slug}`} {...frontMatter} />
       <Stack
         as="article"
         spacing={8}
@@ -81,8 +78,8 @@ export default function BlogLayout({ children, frontMatter }) {
           <DiscussionEmbed
             shortname="grizzlybit-1"
             config={{
-              url: `https://grizzlybit.info/${frontMatter.__resourcePath}`,
-              identifier: `https://grizzlybit.info/${frontMatter.__resourcePath}`,
+              url: `https://grizzlybit.dev/${frontMatter.__resourcePath}`,
+              identifier: `https://grizzlybit.dev/${frontMatter.__resourcePath}`,
               title: frontMatter.title
             }}
           />

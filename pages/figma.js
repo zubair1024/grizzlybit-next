@@ -16,7 +16,7 @@ import FigmaPost from '../components/FigmaPost';
 // eslint-disable-next-line import/no-unresolved, import/extensions
 import { frontMatter as figmaDesigns } from './figma/**/*.mdx';
 
-const url = 'https://grizzlybit.info/figma';
+const url = 'https://grizzlybit.dev/figma';
 const title = 'Figma Designs – Grizzlybit';
 const description = 'Thoughts on software, programming, tech, and my madness.';
 
@@ -55,7 +55,7 @@ const Figma = () => {
             maxWidth="700px"
           >
             <Heading letterSpacing="tight" mb={2} as="h1" size="2xl">
-            🎨 Figma Designs
+              🎨 Figma Designs
             </Heading>
             <Text color={secondaryTextColor[colorMode]}>
               Here are some of my Figma designs. Don't be too judgemental there
@@ -71,7 +71,7 @@ const Figma = () => {
             mt={8}
           >
             <Heading letterSpacing="tight" mb={4} size="xl" fontWeight={700}>
-            👀 Designs
+              👀 Designs
             </Heading>
             <List styleType="disc">
               {figmaDesigns

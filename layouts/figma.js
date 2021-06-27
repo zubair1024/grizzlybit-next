@@ -26,10 +26,7 @@ export default function FigmaLayout({ children, frontMatter }) {
 
   return (
     <Container>
-      <BlogSeo
-        url={`https://grizzlybit.info/figma/${slug}`}
-        {...frontMatter}
-      />
+      <BlogSeo url={`https://grizzlybit.dev/figma/${slug}`} {...frontMatter} />
       <Stack
         as="article"
         spacing={8}

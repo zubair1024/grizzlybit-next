@@ -23,9 +23,9 @@ export default function UsesLayout({ children }) {
       <NextSeo
         title="Uses – Zubair Ahmed"
         description={`Here's what tech I'm currently using for coding, videos, and music.`}
-        canonical="https://grizzlybit.info/uses"
+        canonical="https://grizzlybit.dev/uses"
         openGraph={{
-          url: 'https://grizzlybit.info/uses',
+          url: 'https://grizzlybit.dev/uses',
           title: 'Uses – Zubair Ahmed',
           description: `Here's what tech I'm currently using for coding, videos, and music.`
         }}

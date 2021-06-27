@@ -4,16 +4,16 @@ const description = 'CTO, JavaScript developer, tech enthusiast.';
 const SEO = {
   title,
   description,
-  canonical: 'https://grizzlybit.info',
+  canonical: 'https://grizzlybit.dev',
   openGraph: {
     type: 'website',
     locale: 'en_IE',
-    url: 'https://grizzlybit.info',
+    url: 'https://grizzlybit.dev',
     title,
     description,
     images: [
       {
-        url: 'https://grizzlybit.info/static/images/gb.jpg',
+        url: 'https://grizzlybit.dev/static/images/gb.jpg',
         alt: title,
         width: 1280,
         height: 720

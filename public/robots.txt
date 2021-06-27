@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://grizzlybit.info/sitemap.xml
+Sitemap: https://grizzlybit.dev/sitemap.xml

@@ -16,10 +16,9 @@ import NewsletterLink from '../components/NewsletterLink';
 // eslint-disable-next-line import/no-unresolved, import/extensions
 import { frontMatter as newsletters } from './newsletter/**/*.mdx';
 
-const url = 'https://grizzlybit.info/newsletter';
+const url = 'https://grizzlybit.dev/newsletter';
 const title = 'Newsletter – Grizzlybit';
-const description =
-  'Thoughts on software, programming, tech, and my madness.';
+const description = 'Thoughts on software, programming, tech, and my madness.';
 
 const Newsletter = () => {
   const { colorMode } = useColorMode();

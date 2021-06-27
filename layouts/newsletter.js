@@ -27,7 +27,7 @@ export default function NewsletterLayout({ children, frontMatter }) {
   return (
     <Container>
       <BlogSeo
-        url={`https://grizzlybit.info/newsletter/${slug}`}
+        url={`https://grizzlybit.dev/newsletter/${slug}`}
         {...frontMatter}
       />
       <Stack
