@@ -24,12 +24,6 @@ import { frontMatter as addressingBusinessWithIoT } from './blog/addressing-busi
 import { frontMatter as truthAboutBeingAFullStackDeveloper } from './blog/truth-about-being-a-full-stack-developer.mdx';
 import { frontMatter as importanceOfTeachingChildrenToCode } from './blog/importance-of-teaching-children-to-code.mdx';
 
-console.log(blogPosts);
-console.log(blogPosts);
-console.log(blogPosts);
-console.log(blogPosts);
-console.log(blogPosts);
-
 const url = 'https://grizzlybit.dev/';
 const title = 'Grizzlybit';
 const description =
@@ -87,8 +81,8 @@ const Index = () => {
                   width={{ base: 250 }}
                   src={
                     colorMode === 'dark'
-                      ? '/static/images/grizzlybit-light.png'
-                      : '/static/images/grizzlybit-dark.png'
+                      ? '/static/images/grizzlybit-logo-light.png'
+                      : '/static/images/grizzlybit-logo-dark.png'
                   }
                   alt="Grizzlybit"
                   onLoad={() => setLogoLoading()}
