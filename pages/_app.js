@@ -82,7 +82,7 @@ const App = ({ Component, pageProps }) => {
                 content="/static/favicons/browserconfig.xml"
                 name="msapplication-config"
               />
-              <meta content="1aa84afb4b6d6794" name="yandex-verification" />
+              <meta name="yandex-verification" content="c2fca4a3e3c17c9e" />
               {/* <meta
                 content=""
                 name="google-site-verification"
