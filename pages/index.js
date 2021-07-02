@@ -81,8 +81,8 @@ const Index = () => {
                   width={{ base: 250 }}
                   src={
                     colorMode === 'dark'
-                      ? '/static/images/grizzlybit-logo-light.png'
-                      : '/static/images/grizzlybit-logo-dark.png'
+                      ? '/static/images/grizzlybit-logo-light.svg'
+                      : '/static/images/grizzlybit-logo-dark.svg'
                   }
                   alt="Grizzlybit"
                   onLoad={() => setLogoLoading()}
