@@ -189,6 +189,41 @@ const Timeline = () => {
         mb={4}
         letterSpacing="tighter"
       >
+        2021
+      </Heading>
+      <List>
+        <TimelineStep title="Best Logistics Start-Up Award 🏆">
+          <Link href="https://www.razrlab.com">RAZRLAB</Link> and{' '}
+          <Link href="http://www.haifalogistics.com/home/">
+            Haifa Logistics
+          </Link>{' '}
+          awarded "Best Logistics Start-Up Award" by{' '}
+          <Link href="https://www.transportandlogisticsme.com/smart-logistics/razr-lab-haifa-logistics-win-best-logistics-start-up-award">
+            <a>Transport and Logistics Middle East</a>
+          </Link>
+          . Recognizing us to have the potential to become a logistics giant in
+          the foreseeable future.{' '}
+          <Link href="https://www.youtube.com/watch?v=TrdZXzpeoNQ">
+            Watch it here. 👈
+          </Link>
+        </TimelineStep>
+        <TimelineStep title="The Linux Foundation Node.js Application Development Certificate (LFW211) 📜">
+          Putting the pandemic to good use by taking time to brush up on the
+          fundamentals and getting{' '}
+          <Link href="https://github.com/zubair1024/nodejs-application-development-certificate/blob/main/zubair-ahmed-nodejs-application-development-lfw211-certificate.pdf">
+            certified
+          </Link>{' '}
+          whilst at it by the Linux Foundation.
+        </TimelineStep>
+      </List>
+      <YearDivider />
+      <Heading
+        as="h3"
+        size="lg"
+        fontWeight="bold"
+        mb={4}
+        letterSpacing="tighter"
+      >
         2020
       </Heading>
       <List>
