@@ -17,6 +17,7 @@ import Container from '../components/Container';
 import { CustomLink } from '../components/MDXComponents';
 import Timeline from '../components/Timeline';
 import NowReading from '../components/NowReading';
+import Badges from '../components/Badges';
 
 const url = 'https://grizzlybit.dev/about';
 const title = 'About Me – Zubair Ahmed';
@@ -90,9 +91,8 @@ const About = () => {
               <CustomLink href="/newsletter">here</CustomLink>.
             </Text>
           </Flex>
-          <Box>
-            <NowReading></NowReading>
-          </Box>
+          <NowReading />
+          <Badges />
           <Timeline />
         </Stack>
       </Container>
