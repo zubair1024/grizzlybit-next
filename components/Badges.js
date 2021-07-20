@@ -30,7 +30,7 @@ const badges = [
 ];
 
 const Badges = () => (
-  <Box style={{ width: '100%' }}>
+  <Box pt={10} style={{ width: '100%' }}>
     <Heading as="h2">My Badges 🌟</Heading>
     <ul>
       <List>

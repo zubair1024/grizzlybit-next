@@ -65,7 +65,7 @@ export default function NowReading() {
   1;
 
   return (
-    <>
+    <Box pt={5}>
       {isLoading && <Spinner />}
       {book.title && (
         <>
@@ -116,6 +116,6 @@ export default function NowReading() {
           </Box>
         </>
       )}
-    </>
+    </Box>
   );
 }
