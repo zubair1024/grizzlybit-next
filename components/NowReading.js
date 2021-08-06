@@ -21,7 +21,7 @@ export default function NowReading() {
     const config = { headers: { 'X-Requested-With': 'XMLHttpRequest' } };
     axios
       .get(
-        'https://thingproxy.freeboard.io/fetch/https://www.goodreads.com/review/list?format=xml&id=36437878&key=L6LTc9oD2crL18OCaZUtQ&shelf=currently-reading&v=2',
+        'https://grizzlybit-thingproxy.herokuapp.com/fetch/https://www.goodreads.com/review/list?format=xml&id=36437878&key=L6LTc9oD2crL18OCaZUtQ&shelf=currently-reading&v=2',
         config
       )
       .then((response) => {
