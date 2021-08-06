@@ -7,7 +7,8 @@ import {
   List,
   ListItem,
   Image,
-  Box
+  Box,
+  Tooltip
 } from '@chakra-ui/core';
 
 const badges = [
@@ -26,27 +27,35 @@ const badges = [
     imageUrl: '/static/images/mbrif-icon.png',
     title: 'MBRIF Accelerator Cohort Member',
     height: '4rem'
+  },
+  {
+    url: 'https://www.transportandlogisticsme.com/smart-logistics/razr-lab-haifa-logistics-win-best-logistics-start-up-award',
+    imageUrl: '/static/images/razrlab-best-logistics-start-up-award.png',
+    title: 'Heroes of the Pandemic Award 2021',
+    height: '6rem'
   }
 ];
 
 const Badges = () => (
-  <Box pt={10} style={{ width: '100%' }}>
-    <Heading as="h2">My Badges 🌟</Heading>
+  <Box style={{ width: '100%' }}>
+    {/* <Heading as="h2">My Badges 🌟</Heading> */}
     <ul>
       <List>
-        <Flex pt={5} align="center" flexWrap="wrap">
+        <Flex align="center" flexWrap="wrap">
           {badges.map((badge, index) => {
             return (
               <ListItem p={5} key={index}>
                 <Flex flexDirection="column" align="center" justify="center">
-                  <Link target="_blank" href={badge.url}>
-                    <Image
-                      src={badge.imageUrl}
-                      alt={badge.title}
-                      height={badge.height ?? '6rem'}
-                      loading="lazy"
-                    />
-                  </Link>
+                  <Tooltip label={badge.title} aria-label="A tooltip">
+                    <Link target="_blank" href={badge.url}>
+                      <Image
+                        src={badge.imageUrl}
+                        alt={badge.title}
+                        height={badge.height ?? '6rem'}
+                        loading="lazy"
+                      />
+                    </Link>
+                  </Tooltip>
                 </Flex>
               </ListItem>
             );

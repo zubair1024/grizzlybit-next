@@ -91,8 +91,8 @@ const About = () => {
               <CustomLink href="/newsletter">here</CustomLink>.
             </Text>
           </Flex>
-          <NowReading />
           <Badges />
+          <NowReading />
           <Timeline />
         </Stack>
       </Container>
