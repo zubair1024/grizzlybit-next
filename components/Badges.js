@@ -35,21 +35,27 @@ const badges = [
     height: '6rem'
   },
   {
+    url: 'https://github.com/zubair1024/google-mobile-sites-certification/blob/master/Google%20Partners%20-%20Mobile%20Sites%20Certification.pdf',
+    imageUrl: '/static/images/google.png',
+    title: 'Mobile Sites Certification',
+    height: '4rem'
+  },
+  {
     url: 'https://www.freecodecamp.org/certification/zubair1024/apis-and-microservices',
     imageUrl: '/static/images/free-code-camp.png',
-    title: 'APIs and Microservices',
+    title: 'APIs and Microservices Certification',
     height: '4rem'
   },
   {
     url: 'https://www.freecodecamp.org/certification/zubair1024/javascript-algorithms-and-data-structures',
     imageUrl: '/static/images/free-code-camp.png',
-    title: 'JavaScript Algorithms and Data Structures',
+    title: 'JavaScript Algorithms and Data Structures Certification',
     height: '4rem'
   },
   {
     url: 'https://www.freecodecamp.org/certification/zubair1024/responsive-web-design',
     imageUrl: '/static/images/free-code-camp.png',
-    title: 'Responsive Web Design',
+    title: 'Responsive Web Design Certification',
     height: '4rem'
   }
 ];
