@@ -33,6 +33,24 @@ const badges = [
     imageUrl: '/static/images/razrlab-best-logistics-start-up-award.png',
     title: 'Heroes of the Pandemic Award 2021',
     height: '6rem'
+  },
+  {
+    url: 'https://www.freecodecamp.org/certification/zubair1024/apis-and-microservices',
+    imageUrl: '/static/images/free-code-camp.png',
+    title: 'APIs and Microservices',
+    height: '4rem'
+  },
+  {
+    url: 'https://www.freecodecamp.org/certification/zubair1024/javascript-algorithms-and-data-structures',
+    imageUrl: '/static/images/free-code-camp.png',
+    title: 'JavaScript Algorithms and Data Structures',
+    height: '4rem'
+  },
+  {
+    url: 'https://www.freecodecamp.org/certification/zubair1024/responsive-web-design',
+    imageUrl: '/static/images/free-code-camp.png',
+    title: 'Responsive Web Design',
+    height: '4rem'
   }
 ];
 
