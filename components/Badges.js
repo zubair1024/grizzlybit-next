@@ -84,7 +84,7 @@ const Badges = () => (
               </ListItem>
             );
           })}
-          {/* <ListItem>
+          <ListItem>
             <a
               target="_blank"
               href="https://stackexchange.com/users/4666342/zubair1024"
@@ -98,7 +98,7 @@ const Badges = () => (
                 loading="lazy"
               />
             </a>
-          </ListItem> */}
+          </ListItem>
         </Flex>
       </List>
     </ul>
